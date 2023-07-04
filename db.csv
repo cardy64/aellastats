@@ -1,0 +1,92 @@
+Name,Reported Rate,Visibility Score
+string,number,number
+assaulted for being trans,0.192975629,0.18
+amputee,0.255994006,0.35
+ever had lung cancer,0.2747252747,0.51
+rapist,0.385951258,0.28
+police officer,0.412523523,0.83
+currently homeless,0.4713309946,0.22
+committed homicide,0.5307192807,0.17
+detrans,0.5442232186,0.14
+transman,0.5905431778,0.67
+has hiv,0.5941732686,0.25
+ever had mycoplasma g,0.7112073973,0.06
+professional athelete,0.7809051414,0.44
+heroin user,0.8719478196,0.27
+schizophrenic,0.9436784146,0.50
+pedophile,0.9451304509,0.24
+is/has baby from incest,0.9500673745,0.15
+is medical doctor,0.9509385963,1.17
+bodycount 200+,1,0.21
+truck driver,1.018167879,0.71
+escort,1.053597565,0.34
+has been sex trafficked,1.134766396,0.12
+got boobjob,1.146237483,0.71
+sociopath,1.211579119,0.45
+transwoman,1.221743373,0.82
+spent 1yr+ incarcerated,1.260657947,0.62
+married for money,1.284616546,0.39
+mormon,1.289263063,0.48
+professor,1.41225054,1.02
+20yr+ agegap relationship,1.467137514,0.36
+wears oura ring,1.581993588,0.22
+won 10k+ in lottery,1.764804962,0.24
+works on factory floor,1.770322701,0.67
+nonbinary amab,1.772791162,0.57
+racist,1.775985642,0.73
+recent chlamydia,1.815190623,0.15
+owns tesla,1.992774667,0.79
+obsessed with disney,2.036335757,0.86
+in 15+yr unhappy relationship,2.112132054,0.64
+has hsv2,2.14552889,0.31
+went to harvard or mit,2.280277862,0.62
+anorexia,2.422432219,0.42
+into cuckolding,2.522622726,0.23
+homeschooled k-12,2.588254768,0.54
+traveled in latin america for 1y+,2.616569477,0.84
+got bedbugs from furniture,2.835391353,0.22
+doesn't own a phone,2.869514207,0.35
+nonbinary afab,3.104163279,0.80
+works in ai alignment,3.875775387,0.45
+lives in grouphouse,3.978143949,0.51
+traveled in east asia for 1y+,4.017058523,0.82
+35yo and involuntarily childless,4.027658388,0.47
+has foot fetish,4.426242362,0.35
+asexual,4.60237437,0.60
+has ever been homeless,4.719698906,0.59
+fundie christian,4.848058918,0.81
+was molested as child,4.905559557,0.64
+black,4.922983993,1.89
+has chronic diarrhea,4.943457705,0.25
+earns 300k+ year,5.218908998,0.91
+has long covid,5.235026601,0.61
+owns louisvitton product,5.496828753,0.86
+redhead,5.558395093,1.26
+rupaul fan,5.686755105,0.72
+gay,5.722184792,1.74
+victim of stalking,5.83558883,0.40
+assaulted by a catcaller,6.005912692,0.46
+alcoholic,6.039454731,1.25
+works for government,6.79669168,1.28
+social justice activist,7.433119206,1.19
+owns hottub,7.631322166,0.81
+skis,9.462630393,0.97
+polyamorous,10.00002904,0.79
+had paranormal experience,10.01919592,1.08
+has been raped,10.20592779,0.98
+good dancer,10.3620217,1.17
+virgin,10.44144809,0.95
+has been divorced,10.47513533,1.80
+has a maid/maid,10.72909648,0.99
+smokes,11.55414353,1.76
+in 15+yr happy relationship,12.56911693,1.42
+games 4hrs+ a day,13.01590851,1.02
+obese,13.49043398,1.70
+used psychedelics 10+ times,14.50903747,0.97
+trump voter,14.81207746,1.52
+had transformative spiritual experience,15.99998838,0.79
+owns a gun,17.55584532,1.50
+casual sex with stranger,20.3563878,0.96
+in therapy,21.32053993,1.42
+into bdsm,21.57014497,0.85
+earns under 30k/yr,24.2728202,1.45

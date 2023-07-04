@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Arial', serif;
+    margin-top: 40px;
+    margin-left: 144px;
+    margin-right: 144px;
+    font-size: 40px;
+}
+
+p {
+    margin-top: 40px;
+    margin-left: 144px;
+    margin-right: 144px;
+    color: rgb(64, 64, 64);
+    font-size: 19px;
+    line-height: 30.4px;
+    font-family: Spectral, serif, -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.dontStealMyShit {
+    font-family: 'Arial', serif;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.holder {
+    width: 100%;
+    height: 100%;
+}
+
+.middle {
+    width: 70%;
+    margin-left: 15%;
+}
