@@ -1,6 +1,4 @@
-google.charts.load('current', {'packages':['corechart']});
-
-google.charts.setOnLoadCallback(getData);
+let chart = null;
 
 function getData() {
 
@@ -20,8 +18,8 @@ function getData() {
                 }
             }
 
-            [row[0], row[2]] = [row[2], row[0]];
-            [row[0], row[1]] = [row[1], row[0]];
+            // [row[0], row[2]] = [row[2], row[0]];
+            // [row[0], row[1]] = [row[1], row[0]];
 
             data.push(row);
         }
@@ -42,60 +40,56 @@ function getData() {
 
 function drawChart(info) {
 
-    var data = new google.visualization.DataTable();
-    data.addColumn('number', 'X');
-    data.addColumn('number', 'Y');
-    data.addColumn({type: 'string', role: 'tooltip'});
+    let TESTER = document.getElementById('chart_div');
 
-    var options = {
-        title: 'Epic Title Here',
-        hAxis: {
-            title: info[0][0],
-            titleTextStyle: {
-                fontName: 'Arial',
-                fontSize: 14,
-                italic: false,
-                color: "#1c525e",
-            },
-            gridlines: {
-                color: '#dddddd',
-            },
-            minorGridlines: {
-                color: "transparent"
-            }
-        },
-        vAxis: {
-            title: info[0][1],
-            titleTextStyle: {
-                fontName: 'Arial',
-                fontSize: 14,
-                italic: false,
-                color: "#1c525e",
-            },
-            gridlines: {
-                color: '#9e9e9e',
-            },
-            minorGridlines: {
-                color: "transparent"
-            }
-        },
-        tooltip: { isHtml: true },
-        series: {
-            0: {
-                pointSize: 8,
-                color: 'magenta'
-            }
-        },
-        legend: "none"
+    info.splice(0, 1);
+    info.splice(0, 1);
+
+    let trace1 = {
+        x: info.map(row => parseFloat(row[1])),
+        y: info.map(row => parseFloat(row[2])),
+        mode: 'markers',
+        type: 'scatter',
+        name: 'DATA',
+        text: info.map(row => row[0]),
+        marker: { size: 12 }
     };
 
-    info.splice(0, 1);
-    info.splice(0, 1);
+    let data = [trace1];
 
-    data.addRows([
-        ...info
-    ]);
+    let layout = {
+        // xaxis: {
+        //     range: [ 0.75, 5.25 ]
+        // },
+        // yaxis: {
+        //     range: [0, 8]
+        // },
 
-    var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
-    chart.draw(data, options);
+        xaxis: {
+            title: 'Social Visibility',
+            gridwidth: "2",
+        },
+        yaxis: {
+            title: 'Reported Prevalence',
+            color: "#000000",
+            gridwidth: "2",
+        },
+        title:'Social Visibility vs. Reported Prevalence'
+    };
+
+    Plotly.newPlot(
+        TESTER,
+        data,
+        layout);
+
+    window.onresize = resize;
+
+    resize();
+
+    function resize () {
+        Plotly.Plots.resize(TESTER);
+    }
 }
+
+getData();
+

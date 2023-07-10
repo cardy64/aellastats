@@ -1,30 +1,107 @@
+:root {
+    --sideMargin: 14.5%;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    font-family: 'Arial', serif;
+.box {
+    margin-left: var(--sideMargin);
+    margin-right: var(--sideMargin);
+}
+
+.rect {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 20px;
+}
+
+.title {
     margin-top: 40px;
-    margin-left: 144px;
-    margin-right: 144px;
-    font-size: 40px;
+    font-family: 'Arial', serif;
+    font-size: 32px;
+    color: rgb(64, 64, 64);
+}
+
+.subtitle {
+    margin-top: 12px;
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "SF Compact Display", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.userBox {
+    margin-top: 17px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.userBoxImage {
+    height: 100%;
+    aspect-ratio: 1;
+    display: block;
+    overflow: hidden;
+    border-radius: 1000px;
+}
+
+.userBoxImage > img {
+    height: 100%;
+    width: 100%;
+}
+
+.userBoxInfo {
+    position: relative;
+    width: 100px;
+    margin-left: 20px;
+}
+
+.userBoxInfo > * {
+    font-family: "SF Compact", -apple-system, -apple-system, -system-ui, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.userBoxName {
+    position: absolute;
+    top: 3px;
+}
+
+.userBoxName > a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.userBoxName > a:hover {
+    text-decoration: underline;
+}
+
+.userBoxDate {
+    position: absolute;
+    bottom: 3px;
+    color: rgb(128, 128, 128);
 }
 
 p {
     margin-top: 40px;
-    margin-left: 144px;
-    margin-right: 144px;
     color: rgb(64, 64, 64);
     font-size: 19px;
     line-height: 30.4px;
     font-family: Spectral, serif, -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+p > a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 .dontStealMyShit {
     font-family: 'Arial', serif;
     font-weight: normal;
-    margin-left: 20px;
 }
 
 .holder {
@@ -33,6 +110,6 @@ p {
 }
 
 .middle {
-    width: 70%;
-    margin-left: 15%;
+    width: 85%;
+    margin-left: calc((100% - 85%)/2);
 }
